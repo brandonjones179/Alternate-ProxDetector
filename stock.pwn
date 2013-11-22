@@ -4,6 +4,9 @@ Made by Brandon Jones, all rights reserved
 
 stock SendRangedMessage(playerid, Float:Range, Message[], color)
 {
+    new Float:X, Float:Y, Float:Z;
+    new str[128];
+    
 	GetPlayerPos(playerid, X, Y, Z);
 	for(new a = 0, b = GetMaxPlayers(); a < b; a++)
 	{
