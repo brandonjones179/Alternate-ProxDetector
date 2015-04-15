@@ -12,9 +12,9 @@ stock SendRangedMessage(playerid, Float:Range, Message[], color)
 	{
 	    if(IsPlayerInRangeOfPoint(a, Range, X, Y, Z))
 	    {
-			format(str, sizeof(str), "%s", Message);
+		format(str, sizeof(str), "%s", Message);
 	        SendClientMessage(a, color, str);
-		}
+	    }
 	}
 }
 
